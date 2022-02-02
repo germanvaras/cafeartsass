@@ -1,0 +1,156 @@
+h1, h2, h3, h4 {
+  font-family: 'PT Sans', sans-serif;
+  font-weight: bold; }
+
+p, a, label, input {
+  font-family: 'Open Sans', sans-serif; }
+
+h1 {
+  font-size: 40px; }
+
+h2 {
+  font-size: 30px; }
+  h2:hover {
+    color: #fff; }
+
+h3 {
+  font-size: 25px; }
+
+ul {
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  color: #fff; }
+
+.sps--abv {
+  background-color: #000;
+  color: #000; }
+
+.sps--blw {
+  background-color: #000; }
+
+.footer {
+  background-color: #000;
+  color: #fff; }
+  .footer .footer__titulo {
+    margin-top: 20px; }
+  .footer .footer__input {
+    width: 65%;
+    border: none;
+    margin-top: 15px;
+    background-color: #000;
+    color: #fff;
+    border-bottom: solid 2px #784D3C;
+    font-size: 15px;
+    font-weight: bold; }
+  .footer .footer__label {
+    font-weight: bold; }
+    .footer .footer__label:focus {
+      border-bottom: solid 2px #885845; }
+    .footer .footer__label::placeholder {
+      color: #fff; }
+  .footer .footer__input:focus {
+    outline: none; }
+  .footer .footer__button {
+    margin: 20px 0;
+    transition: background-color 0.3s; }
+    .footer .footer__button:hover {
+      background-color: #885845; }
+  .footer .footer__subtitulo:hover {
+    background-color: #ffffff38;
+    color: #fff;
+    border-radius: 6px; }
+
+.banner {
+  height: 400px;
+  width: 100%; }
+
+.banner__texto {
+  height: 600px;
+  z-index: 10;
+  position: absolute;
+  top: 8rem;
+  left: 0;
+  right: 0;
+  bottom: 0; }
+
+.banner__p {
+  color: #fff; }
+
+.main__subtitulo {
+  color: #fff; }
+
+.header__p {
+  color: #fff; }
+
+.section__titulo {
+  background: linear-gradient(58deg, #161616 41%, #3d3936 100%);
+  color: #fff;
+  border-radius: 10px;
+  margin: 1rem 0;
+  padding: 1rem; }
+
+.sectionCursos__img:hover, .sectionBlog__article:hover {
+  box-shadow: 0px 5px 15px 0px rgba(74, 74, 74, 0.51); }
+
+.sectionCursos__img, .sectionBlog__img {
+  width: 100%; }
+
+.sectionCursos__img {
+  transition: box-shadow 0.3s; }
+  .sectionCursos__img:hover {
+    box-shadow: 0px 5px 15px 0px rgba(74, 74, 74, 0.51); }
+
+.sectionCursos__subtitulo {
+  position: relative;
+  bottom: 3rem;
+  z-index: 10;
+  color: #fff; }
+
+.sectionBeneficios__img {
+  width: 150px;
+  transition: 0.2s; }
+  .sectionBeneficios__img:hover {
+    transform: scale(1.1); }
+
+.sectionBlog__article {
+  background-color: #e4e1e1;
+  transition: box-shadow 0.3s;
+  margin: 0 auto;
+  width: 550px; }
+
+.sectionBlog__button {
+  font-family: 'PT Sans', sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 10px 30px;
+  font-size: 15px;
+  font-weight: 700;
+  background-color: #784D3C;
+  color: #fff;
+  margin-bottom: 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s; }
+  .sectionBlog__button:hover {
+    background-color: #885845; }
+
+.sectionConfian__img {
+  width: 50%; }
+
+@media (min-width: 1100px) {
+  .banner {
+    height: 100vh; }
+  .banner__texto {
+    top: 50%; }
+  .sps--abv {
+    background-color: transparent; } }
+
+@media (max-width: 860px) {
+  .footer__input::placeholder {
+    text-align: center; }
+  .sectionConfian__img {
+    width: 100%; }
+  .sectionBeneficios__img {
+    width: 120px; } }

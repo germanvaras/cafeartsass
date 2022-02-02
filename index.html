@@ -1,0 +1,197 @@
+    <!DOCTYPE html>
+    <html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=PT+Sans:wght@400;700&display=swap"
+            rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Café Art</title>
+    </head>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top sps sps--abv">
+            <div class="container-fluid text-center">
+                <h1><a class="navbar-brand" href="#">Café Art</a></h1>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="pages/cursos.html" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                               Cursos
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a  class="dropdown-item "href="cursos.html">Todos</a></li>
+                                <li><a class="dropdown-item" href="#">Espresso</a></li>
+                                <li><a class="dropdown-item " href="#">Espumado</a></li>
+                                <li><a class="dropdown-item">Arte Latte </a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Nosotros</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <img src="img/banner.jpg" alt="" class="banner">
+        <section class="banner__texto text-center container-fluid">
+                <h2 class="main__subtitulo">Blog de Café con consejos y cursos</h2>
+                <p class="banner__p">Aprendé de los expertos con las mejores recetas y consejos</p>
+        
+        </section>
+        <!-- section cursos -->
+        <section class="container-fluid cursos my-2 ">
+            <h2 class="section__titulo text-center">Nuestros Cursos</h2>
+            <div class="row">
+                <div class="col-12 col-md-4 ">
+                    <img class="sectionCursos__img mb-2" src="img/curso1.jpg" alt="">
+                    <h3 class="sectionCursos__subtitulo text-center ">Espresso</h3>
+                </div>
+                <div class="col-12 col-md-4">
+                    <img class="sectionCursos__img mb-2" src="img/curso2.jpg" alt="">
+                    <h3 class="sectionCursos__subtitulo text-center">Espumado</h3>
+                </div>
+                <div class="col-12 col-md-4">
+                    <img class="sectionCursos__img mb-2" src="img/curso3.jpg" alt="">
+                    <h3 class="sectionCursos__subtitulo text-center">Latte Art</h3>
+                </div>
+            </div>
+        </section>
+        <!-- section beneficios -->
+        <section class="container-fluid  text-center">
+            <h2 class="section__titulo text-center">¿Por qué elegirnos?</h2>
+            <div class="row">
+                <div class="col-12 col-md-4 ">
+                    <img class="sectionBeneficios__img mb-2" src="img/credito.svg" alt="">
+                    <h3 class="sectionBeneficios__subtitulo  ">12 cuotas sin interes</h3>
+                </div>
+                <div class="col-12 col-md-4">
+                    <img class="sectionBeneficios__img mb-2" src="img/online.svg" alt="">
+                    <h3 class="sectionBeneficios__subtitulo ">Cursos 100% Online</h3>
+                </div>
+                <div class="col-12 col-md-4">
+                    <img class="sectionBeneficios__img mb-2" src="img/satisfaccion.svg" alt="">
+                    <h3 class="sectionBeneficios__subtitulo">Satisfacción Garantizada</h3>
+                </div>
+            </div>
+        </section>
+        <!-- section blog -->
+        <section class="container-fluid my-2  ">
+            <h2 class="section__titulo text-center">Nuestro Blog</h2>
+            <div class="row mx-2">
+                <article class="col-12 col-md-4 p-0 mb-4 text-center sectionBlog__article ">
+                    <img class="sectionBlog__img mb-2" src="img/blog1.jpg" alt="">
+                    <h3 class="sectionBlog__subtitulo text-center ">Tips para un buen espresso</h3>
+                    <p class="text-center p-1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde beatae
+                        voluptatem eum velit doloribus. Ipsum culpa sequi fuga incidunt, autem ducimus possimus placeat hic
+                        sunt aut laborum officiis id dolore.</p>
+                    <a href="#"><button class="sectionBlog__button">Leer Más</button></a>
+                </article>
+                <article class="col-12 col-md-4 p-0 mb-4 text-center sectionBlog__article">
+                    <img class="sectionBlog__img mb-2 " src="img/blog2.jpg" alt="">
+                    <h3 class="sectionBlog__subtitulo text-center">¿Más espuma mejor?</h3>
+                    <p class="text-center p-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum dolore
+                        pariatur cupiditate placeat aperiam nemo sunt ex quos unde aliquid enim esse quia, nostrum cum
+                        laborum provident assumenda at. Dicta.</p>
+                    <a href="#"><button class="sectionBlog__button">Leer Más</button></a>
+                </article>
+                <article class="col-12 col-md-4 p-0 mb-4 text-center sectionBlog__article  ">
+                    <img class="sectionBlog__img mb-2" src="img/blog3.jpg" alt="">
+                    <h3 class="sectionBlog__subtitulo text-center">3 figuras clásicas</h3>
+                    <p class="text-center p-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum dolore
+                        pariatur cupiditate placeat aperiam nemo sunt ex quos unde aliquid enim esse quia, nostrum cum
+                        laborum provident assumenda at. Dicta.</p>
+                    <a href="#"><button class="sectionBlog__button">Leer Más</button></a>
+                </article>
+            </div>
+        </section>
+        <!-- section confian en nosotros -->
+        <section class=" container-fluid my-2 sectionMarcas text-center">
+            <h2 class="section__titulo">Confian en Nosotros</h2>
+            <img class="sectionConfian__img text-center mb-2"src="img/marcas.png" alt="">
+        </section>
+    </main>
+    <footer class="container-fluid footer text-center text-md-start">
+        <div class="pt-2">
+        <a  href="index.html"  >
+            <h2 class="footer__titulo">Café <span>Art</span> </h2>
+        </a>
+        </div>
+
+        <nav class="footer__nav row pb-2 ">
+
+            <section class="col-12 col-md-3">
+                <a href="/pages/cursos.html">
+                    <h2 class="footer__titulo">Cursos</h2>
+                </a>
+                <a href="#">
+                    <h3 class="footer__subtitulo">Espresso</h3>
+                </a>
+                <a href="#">
+                    <h3 class="footer__subtitulo">Espumado</h3>
+                </a>
+                <a href="#">
+                    <h3 class="footer__subtitulo">Latte Art</h3>
+                </a>
+
+            </section>
+            <section class="col-12 col-md-3">
+                <h2 class="footer__titulo">Contactanos</h2>
+                <a href="#">
+                    <h3 class="footer__subtitulo">Email</h3>
+                </a>
+                <a href="#">
+                    <h3 class="footer__subtitulo">Whatsapp</h3>
+                </a>
+            </section>
+            <section class="col-12 col-md-3">
+                <h2 class="footer__titulo">Seguinos</h2>
+                <a href="#">
+                    <h3 class="footer__subtitulo">Facebook</h3>
+                </a>
+                <a href="#">
+                    <h3 class="footer__subtitulo">Instagram</h3>
+                </a>
+            </section>
+
+            <form class="footer__formc col-12 col-md-3 mt-3 ">
+                <label class="footer__label ">Enterate de todas las novedades</label>
+                <br>
+                <input class="footer__input" type="email" placeholder="Tu Email">
+                <br>
+                <input class="sectionBlog__button footer__button" type="submit" value="Suscribite">
+
+            </form>
+        </nav>
+    </footer>
+
+    <body>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"></script>
+        <script src="js/nav.js"></script>
+    </body>
+    </html>

@@ -1,0 +1,25 @@
+
+@media (min-width: $grande)  {
+    .banner{
+        height: 100vh;
+
+    }
+    .banner__texto{
+        top:50%
+    }
+    .sps--abv{
+        background-color:transparent;
+  }
+
+}
+@media  (max-width: $mediano) {
+    .footer__input::placeholder{
+     text-align: center;
+    }
+    .sectionConfian__img{
+        width: 100%;
+    }
+    .sectionBeneficios__img{
+        width: 120px;
+    }
+  }
