@@ -5,3 +5,18 @@
 .sps--blw{
     background-color: #000;
 }
+.header__navegacion{
+    display: flex;
+    flex-basis: 100%;
+    justify-content: space-evenly;
+    font-size: 2rem;
+    font-weight: bold;
+      
+}
+.nav-item{
+        &:hover{
+             background-color: #ffffff38;
+             color: #fff;
+             border-radius: 6px;
+}
+}

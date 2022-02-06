@@ -35,7 +35,7 @@
                             <a class="nav-link" href="blog.html">Blog</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle active" href="cursos.html" id="navbarDropdown" role="button"
+                            <a class="nav-link dropdown-toggle" href="cursos.html" id="navbarDropdown" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 Cursos
                             </a>
@@ -47,7 +47,7 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contacto.html">Contacto</a>
+                            <a class="nav-link active" href="contacto.html">Contacto</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="nosotros.html">Nosotros</a>
@@ -57,29 +57,38 @@
             </div>
         </nav>
     </header>
-    <main>
+    <main >
         <img src="../img/banner.jpg" alt="" class="banner">
         <section class="banner__texto text-center container-fluid">
             <h2 class="main__subtitulo">Blog de Café con consejos y cursos</h2>
             <p class="banner__p">Aprendé de los expertos con las mejores recetas y consejos</p>
         </section>
-        <section class="container-fluid cursos my-2 ">
-            <h2 class="section__titulo text-center">Nuestros Cursos</h2>
-            <div class="row">
-                <div class="col-12 col-md-4 ">
-                    <img class="sectionCursos__img mb-2" src="../img/curso1.jpg" alt="Café Espresso">
-                    <h3 class="sectionCursos__subtitulo text-center ">Espresso</h3>
-                </div>
-                <div class="col-12 col-md-4">
-                    <img class="sectionCursos__img mb-2" src="../img/curso2.jpg" alt="Café Espumado">
-                    <h3 class="sectionCursos__subtitulo text-center">Espumado</h3>
-                </div>
-                <div class="col-12 col-md-4">
-                    <img class="sectionCursos__img mb-2" src="../img/curso3.jpg" alt="Latte Art">
-                    <h3 class="sectionCursos__subtitulo text-center">Latte Art</h3>
-                </div>
+        <section class="mainContacto main">
+        <h2 class="mainContacto__titulo ">Contacto</h2>
+        <div class="mainConctacto__formContainer"></div>
+
+        <form class="mainContacto__form sombra">
+
+            <div class="mainContacto__containerInput">
+                <label class="mainContacto__label">Nombre</label>
+                <input class="mainContacto__input" type="text" placeholder="Tú Nombre">
+
             </div>
+            <div class="mainContacto__containerInput">
+                <label class="mainContacto__label"> Correo</label>
+                <input class="mainContacto__input" type="email" placeholder="Tú Email">
+
+            </div>
+            <div class="mainContacto__containerInput">
+                <label class="mainContacto__label">Mensaje</label>
+                <textarea class="mainContacto__input textarea" placeholder="Tu Mensaje"></textarea>
+            </div class="mainContacto__containerInput">
+            <div>
+                <input class="sectionBlog__button button__nosotros mainContacto__button" type="submit" value="Enviar">
+            </div>
+        </form>
         </section>
+    </main>
     </main>
     <footer class="container-fluid footer text-center text-md-start">
         <div>
@@ -139,4 +148,5 @@
         crossorigin="anonymous"></script>
     <script src="../js/nav.js"></script>
 </body>
+
 </html>

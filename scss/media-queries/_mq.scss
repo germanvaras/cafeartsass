@@ -1,5 +1,5 @@
 
-@media (min-width: $grande)  {
+@media (min-width: $xxl)  {
     .banner{
         height: 100vh;
 
@@ -12,7 +12,7 @@
   }
 
 }
-@media  (max-width: $mediano) {
+@media  (max-width: $xl) {
     .footer__input::placeholder{
      text-align: center;
     }
@@ -22,4 +22,40 @@
     .sectionBeneficios__img{
         width: 120px;
     }
+    
+  }
+@media (max-width: $lg){
+    .mainContacto{
+        margin: 0 1rem
+    }
+    .mainContacto__form{
+        width: 100%;
+    }
+   
+    .mainConctacto__formContainer{
+        width: 100%;
+    }
+    .mainContacto__button {
+        width: 100%;
+        margin: 0 1rem;
+    }
+  }
+  @media (max-width:$md ) {
+    .textarea{
+        flex-shrink: 0;
+        width: 20rem;
+    }
+  
+}
+@media (max-width:$s) {
+    .mainContacto__input{
+       width: 13rem;
+       flex-direction: row;
+    }
+   
+  }
+@media (max-width:$xs ) {
+    .mainContacto__input{
+        width: 11rem;  
+   }
   }

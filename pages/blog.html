@@ -20,7 +20,7 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top sps sps--abv px-1">
             <div class="container-fluid text-center">
-                <h1 class="logo ps-md-3"> Café Art<a class="navbar-brand" href="../index.html"></a> </h1>
+                <h1 class="logo ps-md-3">Café Art<a class="navbar-brand" href="#"></a> </h1>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -28,28 +28,37 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav  header__navegacion">
-                        <li class="nav-item">
+                        <li class="nav-item px-lg-2">
                             <a class="nav-link" aria-current="page" href="../index.html">Home</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="blog.html">Blog</a>
+                        <li class="nav-item px-lg-2"">
+                            <a class=" nav-link active href="blog.html">Blog</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle active" href="cursos.html" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Cursos
+                        <li class="nav-item dropdown px-lg-2"">
+                            <a class=" nav-link dropdown-toggle" href="cursos.html" id="navbarDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Cursos
                             </a>
-                            <ul class="dropdown-menu text-center" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item " href="cursos.html">Todos</a></li>
+                            <ul class="dropdown-menu text-center aria-labelledby=" navbarDropdown">
+                                <li><a class="dropdown-item" href="cursos.html">Todos</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
                                 <li><a class="dropdown-item" href="#">Espresso</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
                                 <li><a class="dropdown-item " href="#">Espumado</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
                                 <li><a class="dropdown-item">Arte Latte </a></li>
                             </ul>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        <li class="nav-item px-lg-2"">
+                            <a class=" nav-link" href="contacto.html">Contacto</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item px-lg-2">
                             <a class="nav-link" href="nosotros.html">Nosotros</a>
                         </li>
                     </ul>
@@ -62,22 +71,36 @@
         <section class="banner__texto text-center container-fluid">
             <h2 class="main__subtitulo">Blog de Café con consejos y cursos</h2>
             <p class="banner__p">Aprendé de los expertos con las mejores recetas y consejos</p>
+
         </section>
-        <section class="container-fluid cursos my-2 ">
-            <h2 class="section__titulo text-center">Nuestros Cursos</h2>
-            <div class="row">
-                <div class="col-12 col-md-4 ">
-                    <img class="sectionCursos__img mb-2" src="../img/curso1.jpg" alt="Café Espresso">
-                    <h3 class="sectionCursos__subtitulo text-center ">Espresso</h3>
-                </div>
-                <div class="col-12 col-md-4">
-                    <img class="sectionCursos__img mb-2" src="../img/curso2.jpg" alt="Café Espumado">
-                    <h3 class="sectionCursos__subtitulo text-center">Espumado</h3>
-                </div>
-                <div class="col-12 col-md-4">
-                    <img class="sectionCursos__img mb-2" src="../img/curso3.jpg" alt="Latte Art">
-                    <h3 class="sectionCursos__subtitulo text-center">Latte Art</h3>
-                </div>
+        <section class="container-fluid my-2  ">
+            <h2 class="section__titulo text-center">Nuestro Blog</h2>
+            <div class="row mx-2">
+                <article class="col-12 col-md-4 p-0 mb-4 text-center sectionBlog__article ">
+                    <img class="sectionBlog__img mb-2" src="../img/blog1.jpg" alt="Café Espresso">
+                    <h3 class="sectionBlog__subtitulo text-center ">Tips para un buen espresso</h3>
+                    <p class="text-center p-1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde beatae
+                        voluptatem eum velit doloribus. Ipsum culpa sequi fuga incidunt, autem ducimus possimus placeat
+                        hic
+                        sunt aut laborum officiis id dolore.</p>
+                    <a href="#"><button class="sectionBlog__button">Leer Más</button></a>
+                </article>
+                <article class="col-12 col-md-4 p-0 mb-4 text-center sectionBlog__article">
+                    <img class="sectionBlog__img mb-2 " src="../img/blog2.jpg" alt="Café Espumado">
+                    <h3 class="sectionBlog__subtitulo text-center">¿Más espuma mejor?</h3>
+                    <p class="text-center p-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum dolore
+                        pariatur cupiditate placeat aperiam nemo sunt ex quos unde aliquid enim esse quia, nostrum cum
+                        laborum provident assumenda at. Dicta.</p>
+                    <a href="#"><button class="sectionBlog__button">Leer Más</button></a>
+                </article>
+                <article class="col-12 col-md-4 p-0 mb-4 text-center sectionBlog__article  ">
+                    <img class="sectionBlog__img mb-2" src="../img/blog3.jpg" alt="Latte Art">
+                    <h3 class="sectionBlog__subtitulo text-center">3 figuras clásicas</h3>
+                    <p class="text-center p-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum dolore
+                        pariatur cupiditate placeat aperiam nemo sunt ex quos unde aliquid enim esse quia, nostrum cum
+                        laborum provident assumenda at. Dicta.</p>
+                    <a href="#"><button class="sectionBlog__button">Leer Más</button></a>
+                </article>
             </div>
         </section>
     </main>
@@ -139,4 +162,5 @@
         crossorigin="anonymous"></script>
     <script src="../js/nav.js"></script>
 </body>
+
 </html>

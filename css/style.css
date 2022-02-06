@@ -1,20 +1,25 @@
+* {
+  font-size: 62.5%; }
+
 h1, h2, h3, h4 {
   font-family: 'PT Sans', sans-serif;
   font-weight: bold; }
 
-p, a, label, input {
-  font-family: 'Open Sans', sans-serif; }
+p, a, label, input, span {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.8rem; }
 
 h1 {
-  font-size: 40px; }
+  font-size: 3.2rem;
+  color: #fff; }
 
 h2 {
-  font-size: 30px; }
+  font-size: 3rem; }
   h2:hover {
     color: #fff; }
 
 h3 {
-  font-size: 25px; }
+  font-size: 2.5rem; }
 
 ul {
   list-style: none; }
@@ -30,19 +35,32 @@ a {
 .sps--blw {
   background-color: #000; }
 
+.header__navegacion {
+  display: flex;
+  flex-basis: 100%;
+  justify-content: space-evenly;
+  font-size: 2rem;
+  font-weight: bold; }
+
+.nav-item:hover {
+  background-color: #ffffff38;
+  color: #fff;
+  border-radius: 6px; }
+
 .footer {
   background-color: #000;
   color: #fff; }
   .footer .footer__titulo {
+    font-size: 2.8rem;
     margin-top: 20px; }
   .footer .footer__input {
     width: 65%;
     border: none;
-    margin-top: 15px;
+    margin-top: 1.5rem;
     background-color: #000;
     color: #fff;
     border-bottom: solid 2px #784D3C;
-    font-size: 15px;
+    font-size: 1.5rem;
     font-weight: bold; }
   .footer .footer__label {
     font-weight: bold; }
@@ -57,20 +75,23 @@ a {
     transition: background-color 0.3s; }
     .footer .footer__button:hover {
       background-color: #885845; }
-  .footer .footer__subtitulo:hover {
-    background-color: #ffffff38;
-    color: #fff;
-    border-radius: 6px; }
+  .footer .footer__subtitulo {
+    font-size: 2.2rem; }
+    .footer .footer__subtitulo:hover {
+      display: inline-block;
+      background-color: #ffffff38;
+      color: #fff;
+      border-radius: 6px; }
 
 .banner {
-  height: 400px;
+  height: 40rem;
   width: 100%; }
 
 .banner__texto {
-  height: 600px;
+  height: 60rem;
   z-index: 10;
   position: absolute;
-  top: 8rem;
+  top: 15rem;
   left: 0;
   right: 0;
   bottom: 0; }
@@ -104,7 +125,7 @@ a {
 
 .sectionCursos__subtitulo {
   position: relative;
-  bottom: 3rem;
+  bottom: 5rem;
   z-index: 10;
   color: #fff; }
 
@@ -139,6 +160,47 @@ a {
 .sectionConfian__img {
   width: 50%; }
 
+.mainContacto__titulo {
+  text-align: center;
+  color: #000;
+  margin: 1rem; }
+
+.mainConctacto__formContainer {
+  background-image: url(../img/contacto.jpg);
+  background-size: cover;
+  height: 40rem;
+  width: 80%;
+  margin: 0 auto; }
+
+.mainContacto__form {
+  width: 80%;
+  background-color: #dfdfdf;
+  margin: -5rem auto 2rem auto;
+  padding: 5rem;
+  border-radius: 1rem; }
+  .mainContacto__form .mainContacto__containerInput {
+    display: flex;
+    margin-bottom: 2rem; }
+    .mainContacto__form .mainContacto__containerInput::placeholder {
+      font-family: 'Open Sans', sans-serif; }
+    .mainContacto__form .mainContacto__containerInput .mainContacto__label {
+      flex: 0 0 8rem;
+      text-align: right;
+      padding-right: 1rem; }
+    .mainContacto__form .mainContacto__containerInput .mainContacto__input {
+      flex-grow: 1;
+      background-color: #fff;
+      border: none;
+      padding-left: 0.5rem;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 1.5rem;
+      font-weight: bold;
+      border-radius: 0.5rem; }
+    .mainContacto__form .mainContacto__containerInput .textarea {
+      height: 10rem; }
+      .mainContacto__form .mainContacto__containerInput .textarea::placeholder {
+        font-family: 'Open Sans', sans-serif; }
+
 @media (min-width: 1100px) {
   .banner {
     height: 100vh; }
@@ -154,3 +216,28 @@ a {
     width: 100%; }
   .sectionBeneficios__img {
     width: 120px; } }
+
+@media (max-width: 780px) {
+  .mainContacto {
+    margin: 0 1rem; }
+  .mainContacto__form {
+    width: 100%; }
+  .mainConctacto__formContainer {
+    width: 100%; }
+  .mainContacto__button {
+    width: 100%;
+    margin: 0 1rem; } }
+
+@media (max-width: 536px) {
+  .textarea {
+    flex-shrink: 0;
+    width: 20rem; } }
+
+@media (max-width: 420) {
+  .mainContacto__input {
+    width: 13rem;
+    flex-direction: row; } }
+
+@media (max-width: 380px) {
+  .mainContacto__input {
+    width: 11rem; } }
