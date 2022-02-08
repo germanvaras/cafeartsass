@@ -1,0 +1,20 @@
+1-Incorporé keywords:
+
+index: café cafe especialidad blog cursos barismo barista latte art espresso
+blog: blog café cafe latte espresso capuccinno ristretto barismo barista emulsión
+cursos:cursos cafe café espresso ristretto emulsión degustación cata barismo barista
+contacto: ontacto cafe café espresso ristretto emulsión degustación cata barismo barista
+nosotros:nosotros presentación cafe café espresso ristretto emulsión degustación barismo barista
+
+2-Incorporé Description:
+
+index: Blog y cursos de café brindado por expertos
+blog: Blog de Café realizado por expertos
+cursos: Cursos realizado por expertos
+contacto: Página de Contacto
+nosotros:Página Nosotros, donde conocerás a los profesionales a cargo
+
+3-Agregue los alts faltantes. 
+
+4-Comprimí dos imagenes que superaban los stándares de peso.
+
