@@ -1,6 +1,6 @@
 .footer{
-    background-color:#000;
-    color: #fff;
+    background-color:$negro;
+    color: $blanco;
 
         .footer__titulo{
             font-size: 2.8rem;
@@ -10,19 +10,19 @@
         width: 65%;
         border: none;
         margin-top: 1.5rem;
-        background-color: #000;
-        color: #fff;
-        border-bottom: solid 2px #784D3C;
+        background-color: $negro;
+        color: $blanco;
+        border-bottom: solid 2px $marronOscuro;
         font-size: 1.5rem;
         font-weight: bold;
         }
         .footer__label{
             font-weight:bold ;
                 &:focus{
-                    border-bottom: solid 2px #885845;
+                    border-bottom: solid 2px $marronClaro;
                 }
                     &::placeholder{
-                        color: #fff;
+                        color: $blanco;
                     }
         } 
         .footer__input{
@@ -34,7 +34,7 @@
             margin: 20px 0;
             transition: background-color 0.3s; 
             &:hover{
-                background-color: #885845
+                background-color: $marronClaro;
             }
         }
                 .footer__subtitulo{
@@ -45,8 +45,8 @@
                         &:hover{
                         
                         display: inline-block;
-                        background-color: #ffffff38;
-                        color: #fff;
+                        background-color: $transparente;
+                        color: $blanco;
                         border-radius: 6px;
                         
                     }

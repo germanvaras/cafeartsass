@@ -2,6 +2,9 @@
     font-size: 62.5%;
 
 }
+body{
+    background-color:#f1f1f1;
+}
 h1,h2,h3,h4{
     font-family: 'PT Sans', sans-serif;
     font-weight: bold; 
@@ -13,14 +16,14 @@ p, a, label, input,span{
 }
 h1{
     font-size: 3.2rem;
-    color: #fff;
+    color: $blanco;
 
     
 }
 h2{
     font-size: 3rem;
         &:hover{
-            color:#fff
+            color:$blanco;
         }
 }
 h3{
@@ -33,6 +36,9 @@ ul{
 }
 a{
     text-decoration: none;
-    color: #fff;
+    color: $blanco;
    
+}
+.button{
+    @extend %boton
 }

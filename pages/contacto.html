@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -67,25 +68,22 @@
         <h2 class="mainContacto__titulo ">Contacto</h2>
         <div class="mainConctacto__formContainer"></div>
 
-        <form class="mainContacto__form sombra">
+        <form class="mainContacto__form ">
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Tú Nombre">
+              </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput2" class="form-label">Email</label>
+                <input type="email" class="form-control" id="exampleFormControlInput2" placeholder="nombre@ejemplo.com">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Tú Mensaje" ></textarea>
+              </div>
+              <a href="contacto.html"><input type="submit" class="button__contacto button"></input></a>
 
-            <div class="mainContacto__containerInput">
-                <label class="mainContacto__label">Nombre</label>
-                <input class="mainContacto__input" type="text" placeholder="Tú Nombre">
-
-            </div>
-            <div class="mainContacto__containerInput">
-                <label class="mainContacto__label"> Correo</label>
-                <input class="mainContacto__input" type="email" placeholder="Tú Email">
-
-            </div>
-            <div class="mainContacto__containerInput">
-                <label class="mainContacto__label">Mensaje</label>
-                <textarea class="mainContacto__input textarea" placeholder="Tu Mensaje"></textarea>
-            </div class="mainContacto__containerInput">
-            <div>
-                <input class="sectionBlog__button button__nosotros mainContacto__button" type="submit" value="Enviar">
-            </div>
+           
         </form>
         </section>
     </main>
@@ -138,7 +136,7 @@
                 <br>
                 <input class="footer__input" type="email" placeholder="Tu Email">
                 <br>
-                <input class="sectionBlog__button footer__button" type="submit" value="Suscribite">
+                <input class="footer__button button" type="submit" value="Suscribite">
 
             </form>
         </nav>

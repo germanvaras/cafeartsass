@@ -1,9 +1,9 @@
 .sps--abv{
-    background-color: #000;
-    color:#000
+    background-color: $negro;
+    color:$negro
 }
 .sps--blw{
-    background-color: #000;
+    background-color: $negro;
 }
 .header__navegacion{
     display: flex;
@@ -15,8 +15,8 @@
 }
 .nav-item{
         &:hover{
-             background-color: #ffffff38;
-             color: #fff;
+             background-color: $transparente;
+             color: $blanco;
              border-radius: 6px;
 }
 }

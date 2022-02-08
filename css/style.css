@@ -1,6 +1,9 @@
 * {
   font-size: 62.5%; }
 
+body {
+  background-color: #f1f1f1; }
+
 h1, h2, h3, h4 {
   font-family: 'PT Sans', sans-serif;
   font-weight: bold; }
@@ -27,6 +30,22 @@ ul {
 a {
   text-decoration: none;
   color: #fff; }
+
+.button {
+  font-family: 'PT Sans', sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 10px 30px;
+  font-size: 15px;
+  font-weight: 700;
+  background-color: #784D3C;
+  color: #fff;
+  margin-bottom: 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s; }
+  .button:hover {
+    background-color: #885845; }
 
 .sps--abv {
   background-color: #000;
@@ -112,7 +131,7 @@ a {
   margin: 1rem 0;
   padding: 1rem; }
 
-.sectionCursos__img:hover, .sectionBlog__article:hover {
+.sectionCursos__img:hover, .sectionBlog__article:hover, .mainNosotros__section:hover {
   box-shadow: 0px 5px 15px 0px rgba(74, 74, 74, 0.51); }
 
 .sectionCursos__img, .sectionBlog__img {
@@ -136,26 +155,11 @@ a {
     transform: scale(1.1); }
 
 .sectionBlog__article {
+  width: 55rem;
   background-color: #e4e1e1;
   transition: box-shadow 0.3s;
-  margin: 0 auto;
-  width: 550px; }
-
-.sectionBlog__button {
-  font-family: 'PT Sans', sans-serif;
-  text-align: center;
-  text-transform: uppercase;
-  padding: 10px 30px;
-  font-size: 15px;
-  font-weight: 700;
-  background-color: #784D3C;
-  color: #fff;
-  margin-bottom: 20px;
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.3s; }
-  .sectionBlog__button:hover {
-    background-color: #885845; }
+  transition: box-shadow 0.3s;
+  margin: 0 auto; }
 
 .sectionConfian__img {
   width: 50%; }
@@ -174,32 +178,50 @@ a {
 
 .mainContacto__form {
   width: 80%;
-  background-color: #dfdfdf;
+  background-color: #e4e1e1;
   margin: -5rem auto 2rem auto;
   padding: 5rem;
   border-radius: 1rem; }
-  .mainContacto__form .mainContacto__containerInput {
-    display: flex;
-    margin-bottom: 2rem; }
-    .mainContacto__form .mainContacto__containerInput::placeholder {
+  .mainContacto__form .form-control {
+    background-color: #fff;
+    border: none;
+    padding-left: 0.5rem;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+    border-radius: 0.5rem; }
+    .mainContacto__form .form-control::placeholder {
       font-family: 'Open Sans', sans-serif; }
-    .mainContacto__form .mainContacto__containerInput .mainContacto__label {
-      flex: 0 0 8rem;
-      text-align: right;
-      padding-right: 1rem; }
-    .mainContacto__form .mainContacto__containerInput .mainContacto__input {
-      flex-grow: 1;
-      background-color: #fff;
-      border: none;
-      padding-left: 0.5rem;
-      font-family: 'Open Sans', sans-serif;
-      font-size: 1.5rem;
-      font-weight: bold;
-      border-radius: 0.5rem; }
-    .mainContacto__form .mainContacto__containerInput .textarea {
-      height: 10rem; }
-      .mainContacto__form .mainContacto__containerInput .textarea::placeholder {
-        font-family: 'Open Sans', sans-serif; }
+  .mainContacto__form .form-label {
+    font-weight: bold; }
+
+.mainNosotros__container {
+  display: flex;
+  justify-content: center; }
+  .mainNosotros__container .mainNosotros__section {
+    width: 55rem;
+    background-color: #e4e1e1;
+    transition: box-shadow 0.3s;
+    margin: 2rem 1rem;
+    border-radius: 10px; }
+  .mainNosotros__container .mainNosotros__img {
+    border-radius: 10px; }
+  .mainNosotros__container .mainNosotros__p {
+    padding: 1.5rem; }
+
+.destacadoNombre {
+  color: #000;
+  font-weight: bold; }
+
+.destacadoProfesion {
+  color: #784D3C;
+  font-weight: bold; }
+
+.destacadoFrase {
+  color: #353535;
+  font-weight: bold; }
+
+.destacadoFrase {
+  font-style: italic; }
 
 @media (min-width: 1100px) {
   .banner {
@@ -215,29 +237,12 @@ a {
   .sectionConfian__img {
     width: 100%; }
   .sectionBeneficios__img {
-    width: 120px; } }
-
-@media (max-width: 780px) {
-  .mainContacto {
-    margin: 0 1rem; }
-  .mainContacto__form {
-    width: 100%; }
-  .mainConctacto__formContainer {
-    width: 100%; }
-  .mainContacto__button {
-    width: 100%;
-    margin: 0 1rem; } }
-
-@media (max-width: 536px) {
-  .textarea {
-    flex-shrink: 0;
-    width: 20rem; } }
-
-@media (max-width: 420) {
-  .mainContacto__input {
-    width: 13rem;
-    flex-direction: row; } }
-
-@media (max-width: 380px) {
-  .mainContacto__input {
-    width: 11rem; } }
+    width: 120px; }
+  .mainNosotros__container {
+    flex-direction: column;
+    align-items: center; }
+    .mainNosotros__container .mainNosotros__section {
+      width: 90%;
+      margin: 1rem 0; }
+  .button__contacto {
+    width: 100%; } }

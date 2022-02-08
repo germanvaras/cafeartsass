@@ -1,6 +1,6 @@
 .mainContacto__titulo{
     text-align: center;
-    color: #000;
+    color: $negro;
     margin: 1rem;
 }
 
@@ -15,40 +15,24 @@
              
 .mainContacto__form{
         width: 80%;
-        background-color: #dfdfdf;
+        background-color: $gris;
         margin: -5rem auto 2rem auto;
         padding: 5rem;
         border-radius: 1rem;
-        .mainContacto__containerInput{
-            display: flex;
-            margin-bottom: 2rem;
-            &::placeholder{     
-                font-family: 'Open Sans', sans-serif; 
-            }
-            .mainContacto__label{
-                flex: 0 0 8rem;
-                text-align: right;
-                padding-right: 1rem;}
-            
-               
-            .mainContacto__input{
-                flex-grow: 1;
-                background-color:#fff;
-                 border: none;
+            .form-control{
+                background-color: $blanco;
+                border: none;
                 padding-left: 0.5rem;
                 font-family: 'Open Sans', sans-serif;
                 font-size: 1.5rem;
-                font-weight: bold;
-                border-radius: 0.5rem;}
-                    
-               
-            .textarea{
-                height: 10rem;
+                border-radius: 0.5rem;
                     &::placeholder{
-                        font-family: 'Open Sans', sans-serif;}
-                    } 
-
-        }
+                        font-family: 'Open Sans', sans-serif; 
+                    }
+            }
+            .form-label{
+                font-weight:bold;
+                
+            }      
     }    
                     
-    

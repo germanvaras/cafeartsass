@@ -1,0 +1,5 @@
+@mixin contenedor($ancho, $color, $transition){
+    width: $ancho;
+    background-color: $gris;
+    transition: $transition
+}

@@ -22,40 +22,15 @@
     .sectionBeneficios__img{
         width: 120px;
     }
-    
-  }
-@media (max-width: $lg){
-    .mainContacto{
-        margin: 0 1rem
+    .mainNosotros__container{
+        flex-direction: column;
+        align-items: center;
+        .mainNosotros__section{
+            width: 90%;
+            margin: 1rem 0;
+        }
     }
-    .mainContacto__form{
+    .button__contacto{
         width: 100%;
     }
-   
-    .mainConctacto__formContainer{
-        width: 100%;
-    }
-    .mainContacto__button {
-        width: 100%;
-        margin: 0 1rem;
-    }
-  }
-  @media (max-width:$md ) {
-    .textarea{
-        flex-shrink: 0;
-        width: 20rem;
-    }
-  
-}
-@media (max-width:$s) {
-    .mainContacto__input{
-       width: 13rem;
-       flex-direction: row;
-    }
-   
-  }
-@media (max-width:$xs ) {
-    .mainContacto__input{
-        width: 11rem;  
-   }
   }

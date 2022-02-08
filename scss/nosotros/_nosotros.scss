@@ -1,0 +1,36 @@
+.mainNosotros__container{   
+    display: flex;
+    justify-content: center;
+    .mainNosotros__section{
+        @include contenedor (55rem,$gris, box-shadow 0.3s);
+        margin: 2rem 1rem;
+       
+        border-radius: 10px;
+        
+    }
+        .mainNosotros__img{
+            border-radius: 10px;
+        }
+        .mainNosotros__p{
+            padding: 1.5rem;
+           
+        }
+}
+
+$destacado:(
+    destacadoNombre:#000,
+    destacadoProfesion:#784D3C,
+    destacadoFrase:rgb(53, 53, 53)   
+);
+@each $nombre,  $color in $destacado {
+    .#{$nombre} {
+        
+        color: $color;
+        font-weight: bold;
+      
+    }
+}
+.destacadoFrase{
+    font-style: italic;
+}
+
