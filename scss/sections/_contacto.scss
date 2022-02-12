@@ -33,6 +33,11 @@
             .form-label{
                 font-weight:bold;
                 
-            }      
+            } 
+            .form-input{
+                &:focus{
+                    border: 1px solid $marronOscuro;
+                }
+            }     
     }    
                     

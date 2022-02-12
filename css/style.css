@@ -113,7 +113,8 @@ a {
   top: 15rem;
   left: 0;
   right: 0;
-  bottom: 0; }
+  bottom: 0;
+  color: #fff; }
 
 .banner__p {
   color: #fff; }
@@ -193,6 +194,8 @@ a {
       font-family: 'Open Sans', sans-serif; }
   .mainContacto__form .form-label {
     font-weight: bold; }
+  .mainContacto__form .form-input:focus {
+    border: 1px solid #784D3C; }
 
 .mainNosotros__container {
   display: flex;
@@ -229,7 +232,11 @@ a {
   .banner__texto {
     top: 50%; }
   .sps--abv {
-    background-color: transparent; } }
+    background-color: transparent; }
+  .banner__subtitulo {
+    font-size: 3.5rem; }
+  .banner__p {
+    font-size: 2.5rem; } }
 
 @media (max-width: 860px) {
   .footer__input::placeholder {
