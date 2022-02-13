@@ -5,14 +5,16 @@
     padding: 10px 30px;
     font-size: 15px;
     font-weight: 700;
-    background-color: #784D3C;
+    background-color: $secundario;
     color: #fff;
     margin-bottom: 20px;
     border: none;
     cursor: pointer;
     transition: background-color 0.3s;
          &:hover{
-            background-color: #885845;
+            background-color: $secundario;
+            color:$principal;
+           
 
      }
 }

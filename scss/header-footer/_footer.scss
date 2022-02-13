@@ -1,6 +1,6 @@
 .footer{
     background-color:$negro;
-    color: $blanco;
+    color: $principal;
 
         .footer__titulo{
             font-size: 2.8rem;
@@ -11,18 +11,18 @@
         border: none;
         margin-top: 1.5rem;
         background-color: $negro;
-        color: $blanco;
-        border-bottom: solid 2px $marronOscuro;
+        color: $principal;
+        border-bottom: solid 2px $principal;
         font-size: 1.5rem;
         font-weight: bold;
         }
         .footer__label{
             font-weight:bold ;
                 &:focus{
-                    border-bottom: solid 2px $marronClaro;
+                    border-bottom: solid 2px $principal;
                 }
                     &::placeholder{
-                        color: $blanco;
+                        color: #fff;
                     }
         } 
         .footer__input{
@@ -34,7 +34,8 @@
             margin: 20px 0;
             transition: background-color 0.3s; 
             &:hover{
-                background-color: $marronClaro;
+                background-color: $principal;
+                color: $negro;
             }
         }
                 .footer__subtitulo{
@@ -46,7 +47,7 @@
                         
                         display: inline-block;
                         background-color: $transparente;
-                        color: $blanco;
+                        color: $principal;
                         border-radius: 6px;
                         
                     }

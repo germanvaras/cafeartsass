@@ -14,12 +14,12 @@ p, a, label, input, span {
 
 h1 {
   font-size: 3.2rem;
-  color: #fff; }
+  color: #e4e0c5; }
 
 h2 {
   font-size: 3rem; }
   h2:hover {
-    color: #fff; }
+    color: #e4e0c5; }
 
 h3 {
   font-size: 2.5rem; }
@@ -29,7 +29,23 @@ ul {
 
 a {
   text-decoration: none;
-  color: #fff; }
+  color: #e4e0c5; }
+
+header {
+  grid-area: header; }
+
+main {
+  grid-area: main; }
+
+footer {
+  grid-area: footer; }
+
+.logo {
+  width: 200px; }
+
+.navbar {
+  height: auto;
+  padding: 1.2rem 0; }
 
 .button {
   font-family: 'PT Sans', sans-serif;
@@ -38,21 +54,29 @@ a {
   padding: 10px 30px;
   font-size: 15px;
   font-weight: 700;
-  background-color: #784D3C;
+  background-color: #575756;
   color: #fff;
   margin-bottom: 20px;
   border: none;
   cursor: pointer;
   transition: background-color 0.3s; }
   .button:hover {
-    background-color: #885845; }
+    background-color: #575756;
+    color: #e4e0c5; }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(10, auto);
+  grid-template-areas: "header header" "main main" "main main" "main main" "main main" "main main" "main main" "main main" "main main" "footer footer"; }
 
 .sps--abv {
   background-color: #000;
   color: #000; }
 
 .sps--blw {
-  background-color: #000; }
+  background-color: #000;
+  box-shadow: 0px 5px 15px 0px rgba(74, 74, 74, 0.51); }
 
 .header__navegacion {
   display: flex;
@@ -61,14 +85,26 @@ a {
   font-size: 2rem;
   font-weight: bold; }
 
-.nav-item:hover {
+.nav-link {
+  color: #e4e0c5; }
+
+span.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); }
+
+.nav-link:hover {
   background-color: #ffffff38;
-  color: #fff;
+  color: #e4e0c5;
   border-radius: 6px; }
+
+.nav-link:visited {
+  color: #e4e0c5; }
+
+.active {
+  color: #fff; }
 
 .footer {
   background-color: #000;
-  color: #fff; }
+  color: #e4e0c5; }
   .footer .footer__titulo {
     font-size: 2.8rem;
     margin-top: 20px; }
@@ -77,14 +113,14 @@ a {
     border: none;
     margin-top: 1.5rem;
     background-color: #000;
-    color: #fff;
-    border-bottom: solid 2px #784D3C;
+    color: #e4e0c5;
+    border-bottom: solid 2px #e4e0c5;
     font-size: 1.5rem;
     font-weight: bold; }
   .footer .footer__label {
     font-weight: bold; }
     .footer .footer__label:focus {
-      border-bottom: solid 2px #885845; }
+      border-bottom: solid 2px #e4e0c5; }
     .footer .footer__label::placeholder {
       color: #fff; }
   .footer .footer__input:focus {
@@ -93,13 +129,14 @@ a {
     margin: 20px 0;
     transition: background-color 0.3s; }
     .footer .footer__button:hover {
-      background-color: #885845; }
+      background-color: #e4e0c5;
+      color: #000; }
   .footer .footer__subtitulo {
     font-size: 2.2rem; }
     .footer .footer__subtitulo:hover {
       display: inline-block;
       background-color: #ffffff38;
-      color: #fff;
+      color: #e4e0c5;
       border-radius: 6px; }
 
 .banner {
@@ -114,20 +151,20 @@ a {
   left: 0;
   right: 0;
   bottom: 0;
-  color: #fff; }
+  color: #e4e0c5; }
 
 .banner__p {
-  color: #fff; }
+  color: #e4e0c5; }
 
 .main__subtitulo {
-  color: #fff; }
+  color: #e4e0c5; }
 
 .header__p {
-  color: #fff; }
+  color: #e4e0c5; }
 
 .section__titulo {
-  background: linear-gradient(58deg, #161616 41%, #3d3936 100%);
-  color: #fff;
+  background-color: #000;
+  color: #e4e0c5;
   border-radius: 10px;
   margin: 1rem 0;
   padding: 1rem; }
@@ -147,7 +184,7 @@ a {
   position: relative;
   bottom: 5rem;
   z-index: 10;
-  color: #fff; }
+  color: #e4e0c5; }
 
 .sectionBeneficios__img {
   width: 150px;
@@ -163,7 +200,8 @@ a {
   margin: 0 auto; }
 
 .sectionConfian__img {
-  width: 50%; }
+  width: 50%;
+  box-shadow: 0px 5px 15px 0px rgba(74, 74, 74, 0.51); }
 
 .mainContacto__titulo {
   text-align: center;
