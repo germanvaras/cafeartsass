@@ -3,7 +3,7 @@
     color: $principal;
 
         .footer__titulo{
-            font-size: 2.8rem;
+            font-size: 2.6rem;
             margin-top: 20px; 
         }
         .footer__input{
@@ -16,20 +16,21 @@
         font-size: 1.5rem;
         font-weight: bold;
         }
+            .footer__input{
+            &:focus{
+                outline: none;
+            }
+            }   
         .footer__label{
             font-weight:bold ;
-                &:focus{
+            &:focus{
                     border-bottom: solid 2px $principal;
                 }
                     &::placeholder{
                         color: #fff;
                     }
         } 
-        .footer__input{
-            &:focus{
-                outline: none;
-            }
-        }
+        
         .footer__button{
             margin: 20px 0;
             transition: background-color 0.3s; 

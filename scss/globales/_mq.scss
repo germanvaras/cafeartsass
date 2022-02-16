@@ -19,9 +19,7 @@
 
 }
 @media  (max-width: $xl) {
-    .footer__input::placeholder{
-     text-align: center;
-    }
+
     .sectionConfian__img{
         width: 100%;
     }
@@ -39,4 +37,25 @@
     .button__contacto{
         width: 100%;
     }
+    .footer .footer__titulo{
+        font-size: 2.4rem;
+    }
+    .footer .footer__subtitulo{
+        font-size: 2rem;
+    }
+   .footer__input::placeholder{
+     text-align: center;
+    }
+  }
+
+  @media (min-width:770px) and (max-width: 1400px){
+    .sectionCursos__subtitulo{
+        bottom: 3.8rem;
+    }
+  }
+  @media(max-width: 769px){
+    .sectionCursos__subtitulo{
+        bottom: 4.2rem;
+    }
+    
   }

@@ -5,11 +5,11 @@ body {
   background-color: #f1f1f1; }
 
 h1, h2, h3, h4 {
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: bold; }
 
 p, a, label, input, span {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 1.8rem; }
 
 h1 {
@@ -126,7 +126,7 @@ span.navbar-toggler-icon {
   background-color: #000;
   color: #e4e0c5; }
   .footer .footer__titulo {
-    font-size: 2.8rem;
+    font-size: 2.6rem;
     margin-top: 20px; }
   .footer .footer__input {
     width: 65%;
@@ -137,14 +137,14 @@ span.navbar-toggler-icon {
     border-bottom: solid 2px #e4e0c5;
     font-size: 1.5rem;
     font-weight: bold; }
+  .footer .footer__input:focus {
+    outline: none; }
   .footer .footer__label {
     font-weight: bold; }
     .footer .footer__label:focus {
       border-bottom: solid 2px #e4e0c5; }
     .footer .footer__label::placeholder {
       color: #fff; }
-  .footer .footer__input:focus {
-    outline: none; }
   .footer .footer__button {
     margin: 20px 0;
     transition: background-color 0.3s; }
@@ -182,6 +182,9 @@ span.navbar-toggler-icon {
 .header__p {
   color: #e4e0c5; }
 
+.sectionCursos__img, .sectionBlog__img {
+  width: 100%; }
+
 .section__titulo {
   background-color: #000;
   color: #e4e0c5;
@@ -192,11 +195,9 @@ span.navbar-toggler-icon {
 .sectionCursos__img:hover, .sectionBlog__article:hover, .mainNosotros__section:hover {
   box-shadow: 0px 5px 15px 0px rgba(74, 74, 74, 0.51); }
 
-.sectionCursos__img, .sectionBlog__img {
-  width: 100%; }
-
 .sectionCursos__img {
-  transition: box-shadow 0.3s; }
+  transition: box-shadow 0.3s;
+  filter: brightness(70%); }
   .sectionCursos__img:hover {
     box-shadow: 0px 5px 15px 0px rgba(74, 74, 74, 0.51); }
 
@@ -208,7 +209,7 @@ span.navbar-toggler-icon {
 
 .sectionBeneficios__img {
   width: 150px;
-  transition: 0.2s; }
+  transition: transform 0.2s; }
   .sectionBeneficios__img:hover {
     transform: scale(1.1); }
 
@@ -296,8 +297,6 @@ span.navbar-toggler-icon {
     font-size: 2.5rem; } }
 
 @media (max-width: 860px) {
-  .footer__input::placeholder {
-    text-align: center; }
   .sectionConfian__img {
     width: 100%; }
   .sectionBeneficios__img {
@@ -309,4 +308,18 @@ span.navbar-toggler-icon {
       width: 90%;
       margin: 1rem 0; }
   .button__contacto {
-    width: 100%; } }
+    width: 100%; }
+  .footer .footer__titulo {
+    font-size: 2.4rem; }
+  .footer .footer__subtitulo {
+    font-size: 2rem; }
+  .footer__input::placeholder {
+    text-align: center; } }
+
+@media (min-width: 770px) and (max-width: 1400px) {
+  .sectionCursos__subtitulo {
+    bottom: 3.8rem; } }
+
+@media (max-width: 769px) {
+  .sectionCursos__subtitulo {
+    bottom: 4.2rem; } }
