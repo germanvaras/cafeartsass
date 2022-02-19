@@ -31,15 +31,6 @@ a {
   text-decoration: none;
   color: #e4e0c5; }
 
-header {
-  grid-area: header; }
-
-main {
-  grid-area: main; }
-
-footer {
-  grid-area: footer; }
-
 .logo {
   width: 200px; }
 
@@ -83,12 +74,6 @@ footer {
   .button:hover {
     background-color: #575756;
     color: #e4e0c5; }
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(10, auto);
-  grid-template-areas: "header header" "main main" "main main" "main main" "main main" "main main" "main main" "main main" "main main" "footer footer"; }
 
 .sps--abv {
   background-color: #000;
@@ -236,12 +221,18 @@ span.navbar-toggler-icon {
   color: #000;
   margin: 1rem; }
 
-.mainConctacto__formContainer {
-  background-image: url(../img/contacto.jpg);
+.mainConctacto__formContainer, .mainEjemplo__formContainer {
   background-size: cover;
   height: 40rem;
   width: 80%;
   margin: 0 auto; }
+
+.mainConctacto__formContainer {
+  background-image: url(../img/contacto.jpg); }
+
+.mainEjemplo__formContainer {
+  background-image: url(../img/fondoEjemplo.jpg);
+  filter: brightness(70%); }
 
 .mainContacto__form {
   width: 80%;
@@ -270,12 +261,12 @@ span.navbar-toggler-icon {
     width: 55rem;
     background-color: #e4e1e1;
     transition: box-shadow 0.3s;
-    margin: 2rem 1rem;
+    margin: 1rem 2rem;
     border-radius: 10px; }
-  .mainNosotros__container .mainNosotros__img {
-    border-radius: 10px; }
-  .mainNosotros__container .mainNosotros__p {
-    padding: 1.5rem; }
+    .mainNosotros__container .mainNosotros__section .mainNosotros__img {
+      border-radius: 10px; }
+    .mainNosotros__container .mainNosotros__section .mainNosotros__p {
+      padding: 1.5rem; }
 
 .destacadoNombre {
   color: #000;
@@ -305,6 +296,8 @@ span.navbar-toggler-icon {
     font-size: 2.5rem; } }
 
 @media (max-width: 860px) {
+  .sectionConfian__img {
+    width: 100%; }
   .sectionBeneficios__img {
     width: 120px; }
   .mainNosotros__container {

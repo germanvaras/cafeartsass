@@ -4,13 +4,20 @@
     margin: 1rem;
 }
 
-.mainConctacto__formContainer{
-    background-image: url(../img/contacto.jpg);
+.mainConctacto__formContainer, .mainEjemplo__formContainer{
     background-size: cover;
     height: 40rem;
     width: 80%;
     margin: 0 auto;
 }
+.mainConctacto__formContainer{
+    background-image: url(../img/contacto.jpg)
+}
+.mainEjemplo__formContainer{
+    background-image: url(../img/fondoEjemplo.jpg);
+    filter: brightness(70%);
+}
+
 
              
 .mainContacto__form{
