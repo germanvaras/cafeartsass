@@ -204,6 +204,9 @@ span.navbar-toggler-icon {
   transition: box-shadow 0.3s;
   margin: 0 auto; }
 
+.articleCompleto {
+  width: 80%; }
+
 .sectionConfian__container {
   display: flex;
   justify-content: space-evenly;
